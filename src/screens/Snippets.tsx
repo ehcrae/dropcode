@@ -247,15 +247,10 @@ export const Snippets = () => {
                 <Button
                   type="button"
                   icon="i-teenyicons:sort-alphabetically-outline"
-                  onClick={() => {
-                    if (getSearchType() === "trash") {
-                      setSearchType(null)
-                      return
-                    }
-                    setSearchType("trash")
-                  }}
+                  onClick={
+                    Snippets.name
+                  }
                   tooltip={{ content: "Sort snippets alphabetically" }}
-                  isActive={getSearchType() === "trash"}
                 ></Button>
                 <Button
                   type="button"
